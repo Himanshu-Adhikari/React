@@ -30,7 +30,7 @@ function App() {
       </div>
       <div className="container">
         <div className="head">
-          <div className="place">
+          <div className="place font-bold text-aliceblue px-5 pt-5 text-3xl">
             <h3>{data.name}</h3>
           </div>
           <div className="temperature">
@@ -41,13 +41,23 @@ function App() {
           {data.name != undefined && (
             <div className="webimg">
               <WeatherImage
-                weatherType={data.weather ? data.weather[0].main.toLowerCase() : ""}
+                weatherType={
+                  data.weather ? data.weather[0].main.toLowerCase() : ""
+                }
               />
             </div>
           )}
-          <div className="description">
+          <div className="description ">
             {data.weather ? data.weather[0].main : null}
+           
           </div>
+           {data.name != undefined && (
+              <div className="minmax">
+                <p>MinTemp: {(data.main.temp_min - 272.15).toFixed()}°C</p>
+                <p>MaxTemp :{(data.main.temp_max - 272.15).toFixed()}°C</p>
+              </div>
+            )}
+          
         </div>
         {data.name != undefined && (
           <div className="foot">
