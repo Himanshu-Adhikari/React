@@ -61,11 +61,8 @@ h1 {
 }
 
 .whole .description {
-  position: relative;
   right: -90%;
-  bottom: 40px;
-  transform-origin: 0 0;
-  transform: rotate(-90deg);
+  bottom: 150px;
  
 }
 
