@@ -27,7 +27,7 @@ function App() {
           onKeyDown={searchLoc}
           className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500"
         />
-      </div>
+      </div>``
       <div className="container">
         <div className="head">
           <div className="place font-bold text-aliceblue px-5 pt-5 text-3xl">
